@@ -5,11 +5,6 @@ from StoreApp.models import Departamento
 
 
 def index(request):
-
-    departamentos = Departamento.objects.all()
-    context ={
-        'departamentos' : departamentos
-    }
     return render(request, 'index.html')
 
 def produto_lista(request):
